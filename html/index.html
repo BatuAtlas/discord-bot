@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%- botname %> - Bot Panel</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon_16.ico"/>
+    <link rel="bookmark" href="favicon_16.ico"/>
+    <link rel="stylesheet" href="dist/css/site.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="dist/js/site.min.js"></script>
+  </head>
+  <body>
+    <nav role="navigation" class="navbar navbar-custom">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button data-target="#bs-content-row-navbar-collapse-5" data-toggle="collapse" class="navbar-toggle" type="button">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand"><%- botname %></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div id="bs-content-row-navbar-collapse-5" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#"><%- hesapadı %> <b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li class="disabled"><a href="#">Çıkış yap</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    <div class="container-fluid">
+        <div class="row row-offcanvas row-offcanvas-left">
+          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+            <ul class="list-group panel">
+                <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>Kontrol Paneli</b></li>
+                <li class="list-group-item"><input type="text" class="form-control search-query" placeholder="<%- botname %> Panel"></li>
+                <li class="list-group-item"><a href="index.html"><i class="glyphicon glyphicon-home"></i>Ana Sayfa</a></li>
+                <li class="list-group-item"><a href="list.html"><i class="glyphicon glyphicon-th-list"></i>Sunucu Kullanıcı Listesi</a></li>
+                <li class="list-group-item"><a href="forms.html"><i class="glyphicon glyphicon-list-alt"></i>İstatistikler</a></li>
+                <li class="list-group-item"><a href="alerts.html"><i class="glyphicon glyphicon-bell"></i>Duyurular</li>
+                <li>
+                </li>
+              </ul>
+          </div>
+          <div class="col-xs-12 col-sm-9 content">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> AnaSayfa</h3>
+              </div>
+              <div class="panel-body">
+
+                <div class="content-row">
+                  <h2 class="content-row-title">İyi Akşamlar <span>(<b>Giriş yapılan hesap</b>: <a><%- hesapadı %> - <%- hesapyaşı %></a>)</span></h2>
+                  <div class="row">
+                    <div class="col-md-7">
+                      Ekleyecek birşey bulamadım. Aşsağıdaki sayfalara üstlerine tıklayarak gidebilirsin. Bol şanslar<br><br>
+                      <div class="row tooltip-demo">
+                        <div class="col-md-12"><button type="button" class="btn btn-info btn-block" data-toggle="tooltip" data-placement="right" title="Sunucu üye listelemesi">Üye Listesi</button><br>
+                          <div class="col-md-12"><button type="button" class="btn btn-info btn-block" data-toggle="tooltip" data-placement="right" title="Sunucu istatistikleri">Sunucu İstatistikleri</button><br>
+                      <div class="col-md-12"><button type="button" class="btn btn-info btn-block" data-toggle="tooltip" data-placement="right" title="Duyurular paneli">Duyuru yap</button>
+                        <br>
+                      </div>
+                    </div>
+
+                    </div>
+                  </div></div>
+
+
+              </div><!-- panel body -->
+            </div>
+        </div><!-- content -->
+      </div>
+    </div>
+    </body>
+</html>
